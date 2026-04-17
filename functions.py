@@ -21,3 +21,17 @@ def greet(a):
 # call - execute
 result1 =  greet('Martin')
 print("result1", result1)
+
+
+print("====== Keyword & default arguments =======")
+
+
+# define
+def give_greet(name, age=28):
+    print("give_greet is executed")
+    return f"Hi {name}, you are {age} years old!"
+
+
+# call
+result3 = give_greet(name="Justin")
+print("result3:", result3)
