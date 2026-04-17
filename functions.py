@@ -35,3 +35,17 @@ def give_greet(name, age=28):
 # call
 result3 = give_greet(name="Justin")
 print("result3:", result3)
+
+
+print("======= Scope =======")
+b = 100 #3
+
+
+# define
+def calculate(a, b): #2
+    c = a * b #1
+    print(f"the c value: {c}")
+
+
+# call
+calculate(5, 50)
