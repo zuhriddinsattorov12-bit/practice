@@ -41,3 +41,6 @@ print(f"the input value is numeric: {result}")
 
 test_falsy = "" or False or None or 0 or 100
 print("The FALSY:", bool(test_falsy))
+
+test_truthy = "MIT" 
+print("The FALSY:", bool(test_truthy))
