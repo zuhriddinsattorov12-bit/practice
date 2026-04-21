@@ -51,3 +51,54 @@ data = c is d
 print("c is d", data)
 
 print("c is e", c is e)
+
+
+
+print(" ==== Conditions ====") # conditionlar truthy yoki falsy qiymatni tekshiradi
+x = 5
+
+if x > 50:
+    print("Case A")
+elif x > 10:
+    print("Case B")
+else:
+    print("Case C")
+
+
+print("-----"*5)
+
+
+print(" ==== Logical Operators ====")
+
+
+age = 28
+person = None
+
+if age > 16:
+    person = "Adult"
+else:
+    person = "child"
+
+print("person:", person)
+
+
+# Logical > Ternary Operator
+person = "adult" if age > 18 else "minor"
+print("person", person)
+
+
+# and & or
+
+is_student = True
+is_admin = False
+is_guest = True
+is_parent = True
+
+if not is_student:   # not > bo'lmasa ishlaydi
+    print("Wellcome here, do you want to be student!")
+elif is_admin:
+    print("Please go to the Office!")
+elif is_guest or is_parent:
+    print("Waiting room is over there!")
+else:
+    print("other cases")
