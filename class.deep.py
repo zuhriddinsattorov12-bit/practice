@@ -35,7 +35,7 @@ class Account():
         return self.__owner  
 
 
-my_account = Account("Shawn", 1000)
+my_account = Account("Shawn", 10000)
 my_account.get_balance()
 
 print("=====")
@@ -58,6 +58,8 @@ try:
 except Exception as err:
     print("NO target state", err)
 
+
+# holder
 
 account_owner = my_account.holder 
 print("account_owner:", account_owner)
