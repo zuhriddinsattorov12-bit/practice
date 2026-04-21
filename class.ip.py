@@ -100,3 +100,20 @@ print(dog.voice, fish.voice)
 # status
 print("dog.status:", dog.status)
 print("cat.status:", cat.status)
+
+
+# __ private childda ishlamaydi
+
+
+
+print("==== POLIMORHPISM =====")
+# bir narsani turli xil shakllarga ega bo'lishi yoki ko'p turda yozilishi - Polimorphism
+
+dog.make_voice()
+fish.make_voice
+
+
+print("=========")
+# fish > Fish  > Animal > object
+a = isinstance(fish, Fish)
+print(f"the result:{a}")
