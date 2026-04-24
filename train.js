@@ -1,3 +1,18 @@
+/* MitTask # 4
+
+Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
+MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
+*/
+
+const numbers = [3, 21, 5, 6, 7];
+
+function getHighestIndex(arr) {
+  const max = Math.max(arr);
+  return arr.indexOf(max);
+}
+
+console.log("index:", getHighestIndex(numbers));
+
 /* MitTask #3
 C-TASK (NodeJS)
 
@@ -5,24 +20,24 @@ Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala
 MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
  */
 
-function mitTask(str1, str2) {
-  if (str1.length !== str2.length) return false;
+// function mitTask(str1, str2) {
+//   if (str1.length !== str2.length) return false;
 
-  const counter = {};
+//   const counter = {};
 
-  for (let mit of str1) {
-    counter[mit] = (counter[mit] || 0) + 1;
-  }
+//   for (let mit of str1) {
+//     counter[mit] = (counter[mit] || 0) + 1;
+//   }
 
-  for (let mit of str2) {
-    if (!counter[mit]) return false;
-    counter[mit]--;
-  }
+//   for (let mit of str2) {
+//     if (!counter[mit]) return false;
+//     counter[mit]--;
+//   }
 
-  return true;
-}
+//   return true;
+// }
 
-console.log(mitTask("mitgroup", "gmitprou")); // true
+// console.log(mitTask("mitgroup", "gmitprou")); // true
 
 /* MitTask #2 
 
