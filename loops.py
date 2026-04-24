@@ -48,7 +48,7 @@ while nuss > 0:
     print(f"the nuss equals: {nuss}")
 
 
-    # Pythonda > while True = do while in  JS, C++  ...
+    # Pythonda > while True = (do while) in  JS, C++  ...
     print("--------------")
 count = 0
 while True:
