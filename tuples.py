@@ -29,3 +29,34 @@ tuple_obj = ("MIT", 100, True, None)
 print("animals:", animals)
 # tuple o'z qiymatini o'zgartirmaydi
 # animals[0] = "bird"
+
+
+# Pythonda argumentlarni yoyishni tuplelar orqali amalga oshiramiz
+print("====== Unpacking arguments ======")
+groups = ["MIT", "Flexy", "DEVEX", "MG"]
+# * yordamida bir nechta valuelarni olishimiz mumkin
+(x, y, *z) = groups
+print(f"the x: {x} and y: {y}")
+
+
+# Pythonda tuplelarni qavssiz ham ishlatish mumkin
+people = "Andrew", "John"
+animals = "dog",
+
+
+# *args > tuple
+def calculate(*args):
+    print("args >", args)
+    total = 1
+    for x in args:
+        total *= x
+    print(f"the total value: {total}")
+    return total
+
+
+# Call
+calculate(1, 7, 2, 3)
+print("=========")
+calculate(0, 2, 300)
+print("=========")
+calculate(5, 7)
