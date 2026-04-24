@@ -82,3 +82,14 @@ def greeting(*args, **kwargs):
 
 # Call
 greeting("hi", True, 10, name="John", age=22)
+
+
+# zip ikkita tupledagi indexlarni birgalikda olib beradi
+print("=========")
+tuple1 = (1, 2, 3, 4)
+tuple2 = ('a', 'b', 'c')
+
+zipped = zip(tuple1, tuple2)
+print("zipped:", zipped)
+result = list(zipped)
+print(f"the result: {result}")
