@@ -60,3 +60,15 @@ print("=========")
 calculate(0, 2, 300)
 print("=========")
 calculate(5, 7)
+
+
+# **kwargs > dictionary orqali argumentlarni yoyish usuli
+def introduce(**kwargs):
+    print(f"the type(**kwargs) value: {type(kwargs)}")
+    print(f"Hi, I am {kwargs["name"]} and I am {kwargs["age"]} years old!")
+
+
+# foydalanayotgan argumentlarimizni miqdori nomalum bo'lsa dictionary unpacking kerak bo'ladi
+# Call
+introduce(name="Justin", age=28)
+introduce(name="Shawn", age=38, single=True)
