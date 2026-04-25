@@ -1,7 +1,8 @@
 '''List
    (1) Working with lists
-   (2) List methods
-   (3) Lambda function
+   (2) List methods > mutable: append()  insert() pop()  remove()  clear()  sort()  del()  clear()
+    immutable: index() sorted
+   (3) Lambda function > Anonym function (boshqa tillarda)
    (4) enumarate, map and filter
 '''
 
@@ -111,3 +112,26 @@ print("sort reverse:", numbers)
 numbs = [2, 20, 12, 100]
 new_numbs = sorted(numbs)
 print(f"the sorted numbs: {numbs} and new_numbs: {new_numbs}")
+
+
+# Lambda Function > small anonymous function
+def calculate(x, y): return x * y
+
+
+result = calculate(3, 5)
+print("result:", result)
+
+# lambdaning asosiy kuchi > ikkala valueni ham alohida chiqarib beradi
+people = [
+    ("Robert", 20),
+    ("Steve", 19),
+    ("Joseph", 25),
+    ("Michael", 30),
+    ("Ali", 40)
+]  # ismlarni bosh harfi bo'yicha sort qiladi
+people.sort()
+print("people(1)", people)
+
+# sort by age via lambda
+people.sort(key=lambda person: person[1])
+print("people2", people)
