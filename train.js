@@ -71,3 +71,14 @@ MASALAN countLetter("e", "engineer") 3ni return qiladi.
 // }
 
 // console.log(mitTask("e", "engineer"));
+
+
+mit reverse(a):
+    b = ""
+    for i of reverse:
+    b = i + b
+
+    print(b)
+
+
+reverse("lsdkjfskf")

@@ -3,7 +3,7 @@
    (2) List methods > mutable: append()  insert() pop()  remove()  clear()  sort()  del()  clear()
     immutable: index() sorted
    (3) Lambda function > Anonym function (boshqa tillarda)
-   (4) enumarate, map and filter
+   (4) enumerate, map and filter
 '''
 
 # Java/PHP/NodeJS > array.  & Python: List]
@@ -135,3 +135,66 @@ print("people(1)", people)
 # sort by age via lambda
 people.sort(key=lambda person: person[1])
 print("people2", people)
+
+
+print("==== enumerate, map, filter ==== ")
+# enumerate > valuelarni indexi bilan tuple ko'rinishida olib beradi
+animals = ["dog", "cat", "fish"]
+for element in enumerate(animals):
+    print("elements:", element)
+
+print("--------")
+for (index, value) in enumerate(animals):
+    print(f"the index: {index} and value: {value}")
+
+
+# similar in dictionaries 
+# items yordamida listdagidek amaliyotni dictionary uchun ham qilish mumkin
+car_obj = dict(brand="Ferrari", year=2025) # dict
+result = car_obj.items()
+for (key, value) in result:
+    print(f"the key: {key} and the value: {value} ",)
+
+
+print("======")
+# map 
+# cars = [
+#     ("Ferrari", 78),
+#     ("Toyota", 87),
+#     ("Audi", 116),
+#     ("BMW", 109),
+#     ("Pagani", 33)
+# ]
+
+# new_cars = []
+# for car in cars:
+#     new_cars.append(car[0])
+# print("new car1:", new_cars)
+
+# result_map = map(lambda car: car[0], cars)
+# print(f"the result1: {result_map} and type: {type(result_map)}")
+
+# new_cars = list(result_map)
+# print("new_cars2", new_cars)
+
+
+print("====== Filter =====")
+cars = [
+    ("Ferrari", 78),
+    ("Toyota", 87),
+    ("Audi", 116),
+    ("BMW", 109),
+    ("Pagani", 33)
+]
+
+
+
+result_map = map(lambda car: car[0], cars)
+print(f"the result_map: {result_map} and type: {type(result_map)}")
+new_cars = list(result_map)
+print("new_cars2", new_cars)
+
+print("=======")
+# filter
+result_filter = filter(lambda car: car[1] > 80, cars)
+print(f"the result filter: {result_filter} and type: {type(result_filter)}")
