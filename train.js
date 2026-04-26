@@ -1,17 +1,33 @@
+/* MitTask # 5 (E)
+E-TASK (NodeJS)
+
+Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+MASALAN: getReverse("hello") return qilsin "olleh"
+*/
+
+function getReverse(a) {
+  return a.split("").reverse().join("");
+}
+
+const Steve = "MIT";
+const zzz = getReverse(Steve);
+
+console.log(zzz);
+
 /* MitTask # 4
 
 Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
 MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
 */
 
-const numbers = [3, 21, 5, 6, 7];
+// const numbers = [3, 21, 5, 6, 7];
 
-function getHighestIndex(arr) {
-  const max = Math.max(arr);
-  return arr.indexOf(max);
-}
+// function getHighestIndex(arr) {
+//   const max = Math.max(arr);
+//   return arr.indexOf(max);
+// }
 
-console.log("index:", getHighestIndex(numbers));
+// console.log("index:", getHighestIndex(numbers));
 
 /* MitTask #3
 C-TASK (NodeJS)
@@ -72,25 +88,11 @@ MASALAN countLetter("e", "engineer") 3ni return qiladi.
 
 // console.log(mitTask("e", "engineer"));
 
+// mit reverse(a):
+//     b = ""
+//     for i of reverse:
+//     b = i + b
 
-mit reverse(a):
-    b = ""
-    for i of reverse:
-    b = i + b
+//     print(b)
 
-    print(b)
-
-
-reverse("lsdkjfskf")
-
-
-
-
-
-
-
-result = lambda a: a[::-1]
-
-
-
-reverse = lambda s: '' a
+// reverse("lsdkjfskf")
