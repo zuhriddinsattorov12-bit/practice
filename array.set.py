@@ -6,7 +6,7 @@
 
 from array import array 
  # i & f & u
- print("===== array=====")
+print("===== array=====")
 numbers = array("i", [1, 4, 5, 7, 8, 41])
 print("numbers(1):", numbers)
 
@@ -20,3 +20,5 @@ print("numbers(3):", numbers)
 
 del numbers[0:2]
 print("numbers(4)", numbers)
+
+print("===== array=====")
