@@ -82,3 +82,15 @@ mit reverse(a):
 
 
 reverse("lsdkjfskf")
+
+
+
+
+
+
+
+result = lambda a: a[::-1]
+
+
+
+reverse = lambda s: '' a
