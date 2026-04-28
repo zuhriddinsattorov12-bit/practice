@@ -34,3 +34,11 @@ cars = [
 ]
 list_cars = [car[0] for car in cars if car[1] > 80]      # c version
 print("list_cars:", list_cars)
+
+
+print("===== Set and comprehension  =====")
+numbs = [1, 5, 4, 20, 4, 5, 1, 4]
+set_numbers = {*numbs}
+
+dict_people = {person[0]: person[1] for person in people}
+print("dict_people:", dict_people)

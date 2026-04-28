@@ -5,14 +5,14 @@ Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni tes
 MASALAN: getReverse("hello") return qilsin "olleh"
 */
 
-function getReverse(a) {
-  return a.split("").reverse().join("");
-}
+// function getReverse(a) {
+//   return a.split("").reverse().join("");
+// }
 
-const Steve = "MIT";
-const zzz = getReverse(Steve);
+// const Steve = "MIT";
+// const zzz = getReverse(Steve);
 
-console.log(zzz);
+// console.log(zzz);
 
 /* MitTask # 4
 
@@ -96,3 +96,13 @@ MASALAN countLetter("e", "engineer") 3ni return qiladi.
 //     print(b)
 
 // reverse("lsdkjfskf")
+
+function getReverse(a) {
+  for a in a;
+  if == a;
+  console.log(a)
+  return false
+}
+
+result = getReverse("hello")
+console.log("result:", result)
