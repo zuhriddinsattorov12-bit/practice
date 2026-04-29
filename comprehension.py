@@ -42,3 +42,5 @@ set_numbers = {*numbs}
 
 dict_people = {person[0]: person[1] for person in people}
 print("dict_people:", dict_people)
+
+# generic type > ? 
