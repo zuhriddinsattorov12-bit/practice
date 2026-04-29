@@ -1,3 +1,18 @@
+/* Mitask #6 (F)
+F-TASK (NodeJS)
+
+Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
+MASALAN: getReverse("hello") return true return qiladi
+
+*/
+
+function mitLetters(str) {
+  return new Set(str).size < str.length;
+}
+
+console.log(mitLetters("hello")); // true
+console.log(mitLetters("world")); // false
+
 /* MitTask # 5 (E)
 E-TASK (NodeJS)
 
@@ -96,13 +111,3 @@ MASALAN countLetter("e", "engineer") 3ni return qiladi.
 //     print(b)
 
 // reverse("lsdkjfskf")
-
-function getReverse(a) {
-  for a in a;
-  if == a;
-  console.log(a)
-  return false
-}
-
-result = getReverse("hello")
-console.log("result:", result)
