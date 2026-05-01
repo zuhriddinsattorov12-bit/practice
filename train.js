@@ -1,3 +1,10 @@
+/* 
+G-TASK (PYTHON)
+
+Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
+MASALAN: get_highest_index([5, 21, 12, 21, 8]) return qiladi 1 sonini.
+*/
+
 /* Mitask #6 (F)
 F-TASK (NodeJS)
 
@@ -6,12 +13,12 @@ MASALAN: getReverse("hello") return true return qiladi
 
 */
 
-function mitLetters(str) {
-  return new Set(str).size < str.length;
-}
+// function mitLetters(str) {
+//   return new Set(str).size < str.length;
+// }
 
-console.log(mitLetters("hello")); // true
-console.log(mitLetters("world")); // false
+// console.log(mitLetters("hello")); // true
+// console.log(mitLetters("world")); // false
 
 /* MitTask # 5 (E)
 E-TASK (NodeJS)
