@@ -1,3 +1,29 @@
+
+/*
+Mitask I
+
+Shunday function tuzing, unga string argument pass bolsin. Function ushbu agrumentdagi digitlarni yangi stringda return qilsin
+MASALAN: get_digits("m14i1t") return qiladi "141"
+*/
+
+
+
+
+
+def get_digits(text):
+    return "".join(char for char in text if char.isdigit())
+
+
+print(get_digits("asd123"))
+
+
+
+
+
+
+
+
+
 /* 
 H-TASK (NodeJS)
 
@@ -5,11 +31,11 @@ shunday function tuzing, u integerlardan iborat arrayni argument sifatida qabul 
 MASALAN: getPositive([1, -4, 2]) return qiladi "12"
 */
 
-function numbers(mit) {
-  return mit.filter((m) => m > 0).join("");
-}
+// function numbers(mit) {
+//   return mit.filter((m) => m > 0).join("");
+// }
 
-console.log("result:", numbers([3, -3, 7]));
+// console.log("result:", numbers([3, -3, 7]));
 
 // const numbers = [3, -3, 7];
 // const result = numbers.filter((mit) => mit > 0).join(" ");
