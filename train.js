@@ -1,3 +1,36 @@
+/*
+Mitask J
+
+J-TASK (NodeJS)
+
+Shunday function yozing, u parametridagi array ichida eng kop takrorlangan raqamni topib qaytarsin.
+MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
+*/
+
+const numbers = [1, 2, 3, 1, 3, 1, 6, 1, 2];
+
+function getrepeatedMost(arr) {
+  const sorted = arr.sort((a, b) => a - b);
+
+  let maxCount = 0;
+  let repeatedMost = sorted[0];
+  let currentCount = 1;
+
+  for (let i = 1; i < sorted.length; i++) {
+    if (sorted[i] === sorted[i - 1]) {
+      currentCount++;
+    } else {
+      currentCount = 1;
+    }
+
+    if (currentCount > maxCount) {
+      maxCount = currentCount;
+      repeatedMost = sorted[i];
+    }
+  }
+
+  return repeatedMost;
+}
 
 /*
 Mitask I
@@ -6,23 +39,10 @@ Shunday function tuzing, unga string argument pass bolsin. Function ushbu agrume
 MASALAN: get_digits("m14i1t") return qiladi "141"
 */
 
+// def get_digits(text):
+//     return "".join(char for char in text if char.isdigit())
 
-
-
-
-def get_digits(text):
-    return "".join(char for char in text if char.isdigit())
-
-
-print(get_digits("asd123"))
-
-
-
-
-
-
-
-
+// print(get_digits("asd123"))
 
 /* 
 H-TASK (NodeJS)
