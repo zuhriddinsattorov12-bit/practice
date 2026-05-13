@@ -1,4 +1,20 @@
 /*
+MITASK L
+
+Shunday function yozing, u string qabul qilsin va string ichidagi hamma sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
+MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc";
+*/
+
+function reverseSentence(sentence) {
+  return sentence
+    .split(" ")
+    .map((word) => word.split("").reverse().join(""))
+    .join(" ");
+}
+
+console.log(reverseSentence("Study in MIT!"));
+
+/*
 Mitask J
 
 J-TASK (NodeJS)
@@ -7,30 +23,30 @@ Shunday function yozing, u parametridagi array ichida eng kop takrorlangan raqam
 MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
 */
 
-const numbers = [1, 2, 3, 1, 3, 1, 6, 1, 2];
+// const numbers = [1, 2, 3, 1, 3, 1, 6, 1, 2];
 
-function getrepeatedMost(arr) {
-  const sorted = arr.sort((a, b) => a - b);
+// function getrepeatedMost(arr) {
+//   const sorted = arr.sort((a, b) => a - b);
 
-  let maxCount = 0;
-  let repeatedMost = sorted[0];
-  let currentCount = 1;
+//   let maxCount = 0;
+//   let repeatedMost = sorted[0];
+//   let currentCount = 1;
 
-  for (let i = 1; i < sorted.length; i++) {
-    if (sorted[i] === sorted[i - 1]) {
-      currentCount++;
-    } else {
-      currentCount = 1;
-    }
+//   for (let i = 1; i < sorted.length; i++) {
+//     if (sorted[i] === sorted[i - 1]) {
+//       currentCount++;
+//     } else {
+//       currentCount = 1;
+//     }
 
-    if (currentCount > maxCount) {
-      maxCount = currentCount;
-      repeatedMost = sorted[i];
-    }
-  }
+//     if (currentCount > maxCount) {
+//       maxCount = currentCount;
+//       repeatedMost = sorted[i];
+//     }
+//   }
 
-  return repeatedMost;
-}
+//   return repeatedMost;
+// }
 
 /*
 Mitask I
